@@ -50,7 +50,7 @@ const Login = () => {
                   <h2 className="mb-8 text-2xl text-cyan-900 font-bold">
                     Sign in to your account
                   </h2>
-                  <form action className="space-y-8">
+                  <form action className="space-y-8" onSubmit={handleSubmit}>
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-gray-700">
                         Email
