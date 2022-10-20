@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../config/Firebase";
+import { auth } from "../Config/Firebase";
 import Login from "../Page/Login";
 const Protected = ({ children }) => {
   const [user, isLoading] = useAuthState(auth);
