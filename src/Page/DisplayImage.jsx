@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Display = () => {
+const DisplayImage = () => {
   const navigate = useNavigate();
   return (
     <div>
@@ -61,4 +61,4 @@ const Display = () => {
   );
 };
 
-export default Display;
+export default DisplayImage;
