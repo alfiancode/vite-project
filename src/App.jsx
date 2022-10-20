@@ -11,7 +11,14 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="login" element={<Login />} />
+        <Route
+          path="login"
+          element={
+            <Protected>
+              <Login />
+            </Protected>
+          }
+        />
         <Route
           path="displayimage/:total"
           element={
