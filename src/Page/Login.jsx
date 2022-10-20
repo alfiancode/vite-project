@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import { auth, signInReq } from "../config/firebase";
+import { auth, signInReq } from "../Config/Firebase";
 
 const Login = () => {
   const navigate = useNavigate();
