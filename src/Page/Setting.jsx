@@ -5,7 +5,7 @@ const Setting = () => {
   const [numberOfDisplay, setnumberOfDisplay] = useState(1);
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/displayImage/" + numberOfDisplay);
+    navigate("/displayimage/" + numberOfDisplay);
   };
   return (
     <div>
