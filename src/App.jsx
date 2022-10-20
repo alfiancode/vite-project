@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Protected from "./Components/Protected";
 import DetailDisplay from "./Page/DetailDisplay";
 import DisplayImage from "./Page/DisplayImage";
 
@@ -11,9 +12,30 @@ function App() {
     <div>
       <Routes>
         <Route path="login" element={<Login />} />
-        <Route path="displayImage" element={<DisplayImage />} />
-        <Route path="display/:id" element={<DetailDisplay />} />
-        <Route path="setting" element={<Setting />} />
+        <Route
+          path="displayimage/:total"
+          element={
+            <Protected>
+              <DisplayImage />
+            </Protected>
+          }
+        />
+        <Route
+          path="display/:id"
+          element={
+            <Protected>
+              <DetailDisplay />
+            </Protected>
+          }
+        />
+        <Route
+          path="setting"
+          element={
+            <Protected>
+              <Setting />
+            </Protected>
+          }
+        />
       </Routes>
     </div>
   );
